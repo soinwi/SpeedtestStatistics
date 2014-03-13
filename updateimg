@@ -1,0 +1,3 @@
+#!/bin/bash
+./bwidth.pl
+Rscript bandwidth.R
