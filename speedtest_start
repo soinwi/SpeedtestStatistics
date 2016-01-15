@@ -1,6 +1,7 @@
+#!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $DIR
 echo "--------------------------------"|tee -a speedtest_results.txt
 date |tee -a speedtest_results.txt
-./speedtest_cli.py |tee -a speedtest_results.txt
-./updateimg
+$DIR/speedtest_cli.py |tee -a speedtest_results.txt
+$DIR/updateimg
